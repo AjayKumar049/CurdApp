@@ -1,0 +1,6 @@
+npm install bootstrap
+React router - that allow navigating without refressing pages
+use state - it returns an array with two values;the current state and a update state.
+array- it is a list or collection of items containing 
+key values pair as properties and their respective values
+displaying objects data on the webpage

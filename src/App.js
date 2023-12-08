@@ -1,0 +1,36 @@
+
+
+import React from "react";
+import {
+	BrowserRouter as Router,
+	Route,
+	Routes,
+} from "react-router-dom";
+import "./App.css";
+import Create from "./Components/Create";
+import Edit from "./Components/Edit";
+import Home from "./Components/Home";
+
+function App() {
+	return (
+		<div className="App">
+			<h1 className="heading">CurdApp using ReactJS with Bootstrap</h1>
+			<h2>CRUD App</h2>
+			<Router>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route
+						path="/create"
+						element={<Create />}
+					/>
+					<Route
+						path="/edit"
+						element={<Edit />}
+					/>
+				</Routes>
+			</Router>
+		</div>
+	);
+}
+
+export default App;
